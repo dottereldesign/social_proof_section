@@ -145,12 +145,15 @@ body > p {
 
 .testimonial_header {
   display: flex;
+  margin-bottom: 1.5em;
+  align-items: center;
 }
 
 .testimonial_header img {
   border-radius: 100%;
-  width: 45px;
+  width: 50px;
   margin-right: 1.5em;
+  height: 50px;
 }
 
 .testimoniaL_header-wrapper {
@@ -161,11 +164,15 @@ body > p {
 .testimonial_header-wrapper a {
   text-decoration: none;
   display: block;
-  color: white;
+  font-size: var(--fs-m);
 }
 
-.testimoniaL_header-wrapper a:first-child {
-  color: red;
+.testimonial_header-wrapper > a:first-child {
+  color: var(--clr-neutral-200);
+}
+
+.testimonial_header-wrapper > a:last-child {
+  color: var(--clr-primary-200);
 }
 
 .testimonial_header-wrapper:first-child {
@@ -174,4 +181,6 @@ body > p {
 
 .testimonial > p {
   color: var(--clr-neutral-200);
+  font-size: var(--fs-m);
+  font-weight: var(--fw-light);
 }
