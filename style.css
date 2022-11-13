@@ -92,7 +92,7 @@ select {
 }
 
 body {
-  padding: 6em 1em 6em 1em;
+  padding: 5em 1em 5em 1em;
   background-image: url("images/bg-pattern-top-mobile.svg");
   background-position: top;
   background-repeat: no-repeat;
@@ -114,13 +114,15 @@ body > p {
   margin: 0 auto 1.5em auto;
   font-weight: var(--fw-regular);
   text-align: center;
+  max-inline-size: 75ch;
 }
 
 .review {
   background-color: var(--clr-accent-100);
   border-radius: 10px;
-  margin-bottom: 1em;
   padding: 1em;
+  width: min(100%, 445px);
+  margin: 0 auto 1em auto;
 }
 
 .review_wrapper {
@@ -132,6 +134,7 @@ body > p {
   font-weight: var(--fw-bold);
   color: var(--clr-primary-100);
   text-align: center;
+  font-size: var(--fs-s);
 }
 
 .review_container-stars {
@@ -140,12 +143,22 @@ body > p {
   padding-bottom: 0.5em;
 }
 
+.review_container-stars img {
+  width: 17px;
+  height: 16px;
+}
+
+.review_container-stars img:nth-child(even) {
+  margin: 0 0.5em 0 0.5em;
+}
+
 .testimonial {
   /* margin-top: 2.5em; */
   background-color: var(--clr-primary-100);
   padding: 1.5em;
   border-radius: 10px;
-  margin-bottom: 1em;
+  width: min(100%, 375px);
+  margin: 0 auto 1em auto;
 }
 
 .testimonial-top {
