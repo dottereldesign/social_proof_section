@@ -93,8 +93,10 @@ select {
 
 body {
   padding: 6em 1em 6em 1em;
-  background: #ffffff url("images/bg-pattern-top-mobile.svg") no-repeat top,
-    #ffffff url("images/bg-pattern-bottom-mobile.svg") no-repeat bottom;
+  background-image: url("images/bg-pattern-top-mobile.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 h2 {
