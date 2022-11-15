@@ -103,18 +103,28 @@ h2 {
   font-size: var(--fs-l);
   color: var(--clr-primary-100);
   line-height: 0.8;
-  width: 300px;
+  width: min(100%, 445px);
   text-align: center;
   margin: 0 auto 0.5em auto;
 }
 
-body > p {
+body main > p {
   color: var(--clr-neutral-100);
   font-size: var(--fs-m);
   margin: 0 auto 1.5em auto;
   font-weight: var(--fw-regular);
   text-align: center;
   max-inline-size: 75ch;
+  width: min(100%, 445px);
+}
+
+@media (min-width: 90rem) {
+  h2 {
+    text-align: left;
+  }
+  body main > p {
+    text-align: left;
+  }
 }
 
 .review {
@@ -150,6 +160,23 @@ body > p {
 
 .review_container-stars img:nth-child(even) {
   margin: 0 0.5em 0 0.5em;
+}
+
+@media (min-width: 90rem) {
+  .grid_container-main {
+    display: grid;
+    grid-template-columns: 1fr 50% 50% 1fr;
+  }
+
+  .grid_col-1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+  .grid_col-2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
 }
 
 .testimonial {
