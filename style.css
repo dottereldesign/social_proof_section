@@ -265,3 +265,29 @@ body main > p {
   font-size: var(--fs-s);
   font-weight: var(--fw-light);
 }
+
+@media (min-width: 90rem) {
+  .grid_testimonial {
+    display: grid;
+    grid-template-columns: 1fr 350px 350px 350px 1fr;
+    gap: 1.6em;
+    margin-top: 4em;
+  }
+
+  .testimonial-col-1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .testimonial-col-2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+  .testimonial-col-3 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+  }
+
+  .testimonial {
+    margin: 0 0 1em 0;
+  }
+}
