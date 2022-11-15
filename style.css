@@ -288,6 +288,20 @@ body main > p {
   }
 
   .testimonial {
-    margin: 0 0 1em 0;
+    margin: 0;
+  }
+
+  .testimonial-1 {
+    max-height: 231px;
+  }
+
+  .testimonial-2 {
+    margin-top: 25px;
+    max-height: 231px;
+  }
+
+  .testimonial-3 {
+    margin-top: 50px;
+    max-height: 231px;
   }
 }
