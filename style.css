@@ -165,7 +165,8 @@ body main > p {
 @media (min-width: 90rem) {
   .grid_container-main {
     display: grid;
-    grid-template-columns: 1fr 50% 50% 1fr;
+    grid-template-columns: 1fr 550px 550px 1fr;
+    align-items: center;
   }
 
   .grid_col-1 {
@@ -176,6 +177,41 @@ body main > p {
   .grid_col-2 {
     grid-column-start: 3;
     grid-column-end: 3;
+  }
+
+  .review {
+    margin: 0 0 1em auto;
+  }
+
+  .review:first-child {
+    margin-right: 100px;
+  }
+
+  .review:nth-child(even) {
+    margin-right: 50px;
+  }
+
+  .review_wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .review_container-stars {
+    padding-right: 2em;
+    padding-bottom: 0em;
+  }
+
+  .review_wrapper > p {
+    margin-top: 3px;
+  }
+
+  h2 {
+    margin: 0 0 0.5em 0;
+  }
+
+  body main > p {
+    margin: 0em;
   }
 }
 
